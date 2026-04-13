@@ -1,23 +1,12 @@
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Astro v5.13.2" />
-    <title>Dashboard Template · Bootstrap v5.3</title>
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/dashboard/"
-    />
-    <script src="../assets/js/color-modes.js"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+{% extends 'layout.html'%}
+  {%block page_header %} 
+  <script src="../assets/js/color-modes.js"></script>
+  <!-- <link href=". ./assets/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
     <meta name="theme-color" content="#712cf9" />
-    <link href="dashboard.css" rel="stylesheet" />
+    <link href="/static/css/dashboard.css" rel="stylesheet" />
+  {%endblock %}
+
+{%block page_style %} 
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -92,8 +81,8 @@
         display: block !important;
       }
     </style>
-  </head>
-  <body>
+     {%endblock %}
+    {% block content %}
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -639,10 +628,9 @@
         </main>
       </div>
     </div>
-    <script
-      src="../assets/dist/js/bootstrap.bundle.min.js"
-      class="astro-vvvwv3sm"
-    ></script>
+  {% endblock %}
+
+{%block page_js %} 
     <script
       src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"
       integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp"
@@ -650,5 +638,4 @@
       class="astro-vvvwv3sm"
     ></script>
     <script src="dashboard.js" class="astro-vvvwv3sm"></script>
-  </body>
-</html>
+{%endblock %}

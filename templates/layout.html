@@ -6,7 +6,9 @@
     
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/bootstrap-5.3.6/css/bootstrap.min.css">
-    <title>Página Incicial</title>
+    <title>{{title or "Página Inicial"}}</title>
+{%block page_header %}  {%endblock %}
+{%block page_style %}  {%endblock %}
 </head>
 <body>
     {% include 'navbar.html' %}
@@ -17,5 +19,6 @@
     </main>
 
     <script type="text/javascript" src="/static/bootstrap-5.3.6/js/bootstrap.bundle.min.js"></script>
+{%block page_js %}  {%endblock %}
 </body>
 </html>
