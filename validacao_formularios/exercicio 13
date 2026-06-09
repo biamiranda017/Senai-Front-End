@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Unidades Relativas</title>
+
+    <style>
+        html {
+            font-size: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 0.1rem solid #ccc;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5em;
+        }
+
+        button {
+            padding: 0.8em 1.5em;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Layout Responsivo</h1>
+
+        <p>
+            Este exemplo utiliza unidades relativas como rem, em e %
+            para criar uma interface mais adaptável a diferentes dispositivos.
+        </p>
+
+        <button>Clique Aqui</button>
+    </div>
+
+</body>
+</html>
