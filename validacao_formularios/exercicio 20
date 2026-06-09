@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Abas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        .tab-btn.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .conteudo {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .conteudo.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sistema de Abas</h1>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="abrirAba('aba1', this)">Aba 1</button>
+        <button class="tab-btn" onclick="abrirAba('aba2', this)">Aba 2</button>
+        <button class="tab-btn" onclick="abrirAba('aba3', this)">Aba 3</button>
+    </div>
+
+    <div id="aba1" class="conteudo active">
+        <h2>Conteúdo da Aba 1</h2>
+        <p>Este é o conteúdo da primeira aba.</p>
+    </div>
+
+    <div id="aba2" class="conteudo">
+        <h2>Conteúdo da Aba 2</h2>
+        <p>Este é o conteúdo da segunda aba.</p>
+    </div>
+
+    <div id="aba3" class="conteudo">
+        <h2>Conteúdo da Aba 3</h2>
+        <p>Este é o conteúdo da terceira aba.</p>
+    </div>
+
+    <script>
+        function abrirAba(idAba, botao) {
+            const conteudos = document.querySelectorAll(".conteudo");
+            const botoes = document.querySelectorAll(".tab-btn");
+
+            conteudos.forEach(function(conteudo) {
+                conteudo.classList.remove("active");
+            });
+
+            botoes.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            document.getElementById(idAba).classList.add("active");
+            botao.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
