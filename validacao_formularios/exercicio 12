@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hambúrguer Responsivo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburguer {
+            display: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .hamburguer {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            #menu-toggle:checked + .hamburguer + .menu {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="hamburguer">
+            ☰
+        </label>
+
+        <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
