@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .galeria img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .ampliada {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Galeria de Imagens</h1>
+
+    <div class="galeria">
+        <img src="https://picsum.photos/id/237/200/150" alt="Imagem 1">
+        <img src="https://picsum.photos/id/238/200/150" alt="Imagem 2">
+        <img src="https://picsum.photos/id/239/200/150" alt="Imagem 3">
+    </div>
+
+    <script>
+        const imagens = document.querySelectorAll(".galeria img");
+
+        imagens.forEach(function(imagem) {
+            imagem.addEventListener("click", function() {
+                imagem.classList.toggle("ampliada");
+            });
+        });
+    </script>
+
+</body>
+</html>
