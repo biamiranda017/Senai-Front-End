@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Tecnologia</title>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Blog de Tecnologia</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Introdução ao Desenvolvimento Web</h2>
+
+            <section>
+                <h3>O que é Desenvolvimento Web?</h3>
+                <p>
+                    Desenvolvimento Web é a criação de sites e aplicações para a internet.
+                </p>
+            </section>
+
+            <section>
+                <h3>Principais Tecnologias</h3>
+                <p>
+                    As principais tecnologias são HTML, CSS e JavaScript.
+                </p>
+            </section>
+
+            <section>
+                <h3>Conclusão</h3>
+                <p>
+                    Aprender desenvolvimento web é um ótimo caminho para quem deseja trabalhar com tecnologia.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Exercício 4 - Article e Section</p>
+    </footer>
+
+</body>
+</html>
