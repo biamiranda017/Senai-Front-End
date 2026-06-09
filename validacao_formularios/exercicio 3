@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure e Figcaption</title>
+</head>
+<body>
+
+    <header>
+        <h1>Exemplo de Imagem com Legenda</h1>
+    </header>
+
+    <main>
+        <figure>
+            <img src="https://via.placeholder.com/400x250" alt="Imagem de exemplo">
+            <figcaption>
+                Esta é uma legenda utilizando as tags figure e figcaption.
+            </figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>Exercício 3 - HTML Semântico</p>
+    </footer>
+
+</body>
+</html>
