@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .conteudo {
+            flex: 3;
+            background-color: #e9e9e9;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        /* Celular */
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+
+            .menu,
+            .conteudo {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Responsivo</h1>
+    </header>
+
+    <div class="container">
+        <aside class="menu">
+            <h2>Menu</h2>
+            <p>Links de navegação.</p>
+        </aside>
+
+        <main class="conteudo">
+            <h2>Conteúdo Principal</h2>
+            <p>Este layout se adapta a diferentes tamanhos de tela usando Media Queries.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>Exercício 11 - Layout Responsivo</p>
+    </footer>
+
+</body>
+</html>
