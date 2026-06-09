@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Interativo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="meuBotao">Passe o mouse aqui</button>
+
+    <script>
+        const botao = document.getElementById("meuBotao");
+
+        botao.addEventListener("mouseover", function() {
+            botao.style.backgroundColor = "red";
+        });
+
+        botao.addEventListener("mouseout", function() {
+            botao.style.backgroundColor = "blue";
+        });
+    </script>
+
+</body>
+</html>
