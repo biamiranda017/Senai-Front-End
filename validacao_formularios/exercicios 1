@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Exercícios Front-End</title>
+</head>
+<body>
+
+    <header>
+        <h1>Portfólio Front-End</h1>
+        <p>Lista de exercícios organizados por temas.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="html">
+            <h2>HTML</h2>
+
+            <article>
+                <h3>Exercício 1</h3>
+                <p>Estrutura semântica utilizando tags HTML5.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Informações</h3>
+            <p>Repositório criado para o processo seletivo.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Seu Nome</p>
+    </footer>
+
+</body>
+</html>
